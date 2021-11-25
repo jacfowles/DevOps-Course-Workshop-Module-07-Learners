@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
-        run: docker build . -t webapp
+        run: docker build . -t jacfowles/dotnettemplate
       - name: log in
         run: docker login -u ${{ secrets.USERNAME }} -p ${{ secrets.PASSWORD }}
       - name: push
